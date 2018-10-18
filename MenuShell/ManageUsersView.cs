@@ -4,13 +4,11 @@ using System.Text;
 
 namespace MenuShell
 {
-    class AdminView : BaseView
+    class ManageUsersView : BaseView
     {
-        public User LoggedInUser { get; set; }
-
-        public AdminView(string title, User loggedInUser) : base(title)
+        public ManageUsersView(string title) : base(title)
         {
-            LoggedInUser = loggedInUser;
+
         }
 
         public void Display()
@@ -19,21 +17,24 @@ namespace MenuShell
             do
             {
                 Console.Clear();
-                Console.WriteLine("\n1. Manage users" +
+                Console.WriteLine("\n1. Add new user" +
+                    "\n2. Search for a user" +
                     "\nESC. Exit");
                 input = Console.ReadKey().Key;
                 switch (input)
                 {
                     case ConsoleKey.D1:
-                        ManageUsersView manage = new ManageUsersView("Admin - Manage users");
-                        manage.Display();
+                        AddUserView addUser = new AddUserView("Add a new user");
+                        addUser.Display();
+                        break;
+                    case ConsoleKey.D2:
+                        SearchUserView searchUser = new SearchUserView("Find a user");
+                        searchUser.Display();
                         break;
                     case ConsoleKey.Escape:
-                        LoginView login = new LoginView("Log in");
-                        login.Display();
                         break;
                 }
             } while (input != ConsoleKey.Escape);
         }
-    }   
+    }
 }

@@ -19,6 +19,14 @@ namespace MenuShell
             Console.Write("\n> ");
             var username = ValidInput(Console.ReadLine());
 
+            Console.WriteLine("\nEnter the first name of the person you want to add");
+            Console.Write("\n> ");
+            var firstname = ValidInput(Console.ReadLine());
+
+            Console.WriteLine("\nEnter the last name of the person you want to add");
+            Console.Write("\n> ");
+            var lastname = ValidInput(Console.ReadLine());
+
             Console.WriteLine("\nEnter the password for the person you want to add");
             Console.Write("\n> ");
             var password = ValidInput(Console.ReadLine());
@@ -35,16 +43,16 @@ namespace MenuShell
                 switch (input)
                 {
                     case ConsoleKey.D1:
-                        Confirmation(new User(username, password, Roles.Admin));
+                        Confirmation(new User(username, password, firstname, lastname, "Administrator", Roles.Admin));
                         break;
                     case ConsoleKey.D2:
-                        Confirmation(new User(username, password, Roles.Receptionist));
+                        Confirmation(new User(username, password, firstname, lastname, "Receptionist", Roles.Receptionist));
                         break;
                     case ConsoleKey.D3:
-                        Confirmation(new User(username, password, Roles.Vet));
+                        Confirmation(new User(username, password, firstname, lastname, "Veterinary Doctor", Roles.Vet));
                         break;
                     case ConsoleKey.D4:
-                        Confirmation(new User(username, password, Roles.User));
+                        Confirmation(new User(username, password, firstname, lastname, "User", Roles.User));
                         break;
                 }
             } while 
