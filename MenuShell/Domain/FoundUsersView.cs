@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MenuShell.Domain.Services;
 
-namespace MenuShell
+namespace MenuShell.Domain
 {
-    class FoundUsersView : BaseView
+    class FoundUsersView : View
     {
         public List<User> Users { get; set; } //Initial database of users
         public List<User> FoundUsers { get; set; }  //List of users that matched the search query

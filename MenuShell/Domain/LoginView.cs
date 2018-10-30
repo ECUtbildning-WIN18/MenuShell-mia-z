@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MenuShell.Domain.Services;
 
-namespace MenuShell
+namespace MenuShell.Domain
 {
-    class LoginView : BaseView, IAuthenticationService
+    class LoginView : View, IAuthenticationService
     {
         public User UserToLogIn;
 

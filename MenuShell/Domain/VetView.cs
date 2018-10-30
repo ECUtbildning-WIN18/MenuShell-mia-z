@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using MenuShell.Domain.Services;
 
-namespace MenuShell
+namespace MenuShell.Domain
 {
-    class VetView : BaseView
+    class VetView : View
     {
         public User LoggedInUser { get; set; }
 

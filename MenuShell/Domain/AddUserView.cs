@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using MenuShell.Domain.Services;
 
-namespace MenuShell
+namespace MenuShell.Domain
 {
-    class AddUserView : BaseView
+    class AddUserView : View
     {
         public static List<User> Users;
 

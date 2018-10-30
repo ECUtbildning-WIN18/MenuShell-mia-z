@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99229fb1-8e01-4667-bab8-7d15b28b3e5e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MenuShell/AddUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/AdminView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/AdminView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/BaseView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/FoundUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/FoundUsersView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/IAuthenticationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/LoginView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/ManageUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/ReceptionistView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/ReceptionistView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/Roles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/Roles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/SearchUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/SearchUserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/UserDetailsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/UserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/UserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/VetView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/VetView.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1532716483">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="369" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="369" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+              <folding>
+                <marker date="1540872566391" expanded="false" signature="6:47" ph="..." />
+                <marker date="1540872566391" expanded="true" signature="125:1211" ph="{...}" />
+                <marker date="1540872566391" expanded="true" signature="145:1209" ph="{...}" />
+                <marker date="1540872566391" expanded="true" signature="232:1203" ph="{...}" />
+                <marker date="1540872566391" expanded="true" signature="290:1113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/Roles.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1540872566425" expanded="true" signature="35:151" ph="{...}" />
+                <marker date="1540872566425" expanded="true" signature="59:149" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/View.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <marker date="1540872566437" expanded="true" signature="50:248" ph="{...}" />
+                <marker date="1540872566437" expanded="true" signature="76:246" ph="{...}" />
+                <marker date="1540872566437" expanded="true" signature="158:240" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding>
+                <marker date="1540874496565" expanded="true" signature="35:368" ph="{...}" />
+                <marker date="1540874496565" expanded="true" signature="69:366" ph="{...}" />
+                <marker date="1540874496565" expanded="true" signature="202:360" ph="{...}" />
+                <marker date="1540874496565" expanded="true" signature="238:325" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AdminView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1540872559277" expanded="false" signature="6:46" ph="..." />
+                <marker date="1540872559277" expanded="true" signature="74:1090" ph="{...}" />
+                <marker date="1540872559277" expanded="true" signature="103:1085" ph="{...}" />
+                <marker date="1540872559277" expanded="true" signature="229:290" ph="{...}" />
+                <marker date="1540872559277" expanded="true" signature="321:1079" ph="{...}" />
+                <marker date="1540872559277" expanded="true" signature="593:1019" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/AdminView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/SearchUserView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/FoundUsersView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/Roles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/ReceptionistView.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MenuShell/BaseView.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/View.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/View.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/MenuType.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MenuShell" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MenuShell" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MenuShell" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MenuShell" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MenuShell" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Domain" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MenuShell" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MenuShell" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/MenuShell/bin/Debug/netcoreapp2.1/MenuShell.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MenuShell" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="1" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MenuShell/MenuShell.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99229fb1-8e01-4667-bab8-7d15b28b3e5e" name="Default Changelist" comment="" />
+      <created>1540870690174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540870690174</updated>
+      <workItem from="1540870693232" duration="77000" />
+      <workItem from="1540870824335" duration="174000" />
+      <workItem from="1540871032731" duration="100000" />
+      <workItem from="1540871155781" duration="46000" />
+      <workItem from="1540871224763" duration="51000" />
+      <workItem from="1540871302369" duration="466000" />
+      <workItem from="1540871800200" duration="2695000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3609000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" auto_hide="true" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32897604" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.32897604" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MenuShell/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <marker date="1540872566391" expanded="false" signature="6:47" ph="..." />
+            <marker date="1540872566391" expanded="true" signature="125:1211" ph="{...}" />
+            <marker date="1540872566391" expanded="true" signature="145:1209" ph="{...}" />
+            <marker date="1540872566391" expanded="true" signature="232:1203" ph="{...}" />
+            <marker date="1540872566391" expanded="true" signature="290:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1540872566409" expanded="false" signature="6:80" ph="..." />
+            <marker date="1540872566409" expanded="true" signature="108:3478" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="139:3476" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="241:296" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="327:2403" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="1421:2215" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="2443:2800" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="2500:2765" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="2849:3470" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="3168:3292" ph="{...}" />
+            <marker date="1540872566409" expanded="true" signature="3309:3447" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/View.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <marker date="1540872566437" expanded="true" signature="50:248" ph="{...}" />
+            <marker date="1540872566437" expanded="true" signature="76:246" ph="{...}" />
+            <marker date="1540872566437" expanded="true" signature="158:240" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/Roles.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1540872566425" expanded="true" signature="35:151" ph="{...}" />
+            <marker date="1540872566425" expanded="true" signature="59:149" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <marker date="1540872559227" expanded="true" signature="70:203" ph="{...}" />
+            <marker date="1540872559227" expanded="true" signature="109:201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/ReceptionistView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1540872559299" expanded="false" signature="6:46" ph="..." />
+            <marker date="1540872559299" expanded="true" signature="74:922" ph="{...}" />
+            <marker date="1540872559299" expanded="true" signature="110:920" ph="{...}" />
+            <marker date="1540872559299" expanded="true" signature="243:304" ph="{...}" />
+            <marker date="1540872559299" expanded="true" signature="335:914" ph="{...}" />
+            <marker date="1540872559299" expanded="true" signature="635:854" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/SearchUserView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1540872559292" expanded="false" signature="6:80" ph="..." />
+            <marker date="1540872559292" expanded="true" signature="108:1259" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="142:1257" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="352:450" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="481:640" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="680:1251" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="728:879" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="790:865" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="915:1060" ph="{...}" />
+            <marker date="1540872559292" expanded="true" signature="1065:1241" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/LoginView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+          <folding>
+            <marker date="1540872559248" expanded="false" signature="6:80" ph="..." />
+            <marker date="1540872559248" expanded="true" signature="108:2165" ph="{...}" />
+            <marker date="1540872559248" expanded="true" signature="161:2163" ph="{...}" />
+            <marker date="1540872559248" expanded="true" signature="254:287" ph="{...}" />
+            <marker date="1540872559248" expanded="true" signature="318:1775" ph="{...}" />
+            <marker date="1540872559248" expanded="true" signature="681:1765" ph="{...}" />
+            <marker date="1540872559248" expanded="true" signature="1862:2157" ph="{...}" />
+            <marker date="1540872559248" expanded="true" signature="1913:2116" ph="{...}" />
+            <marker date="1540872559248" expanded="true" signature="1994:2102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AdminView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1540872559277" expanded="false" signature="6:46" ph="..." />
+            <marker date="1540872559277" expanded="true" signature="74:1090" ph="{...}" />
+            <marker date="1540872559277" expanded="true" signature="103:1085" ph="{...}" />
+            <marker date="1540872559277" expanded="true" signature="229:290" ph="{...}" />
+            <marker date="1540872559277" expanded="true" signature="321:1079" ph="{...}" />
+            <marker date="1540872559277" expanded="true" signature="593:1019" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/FoundUsersView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1540872559236" expanded="false" signature="6:80" ph="..." />
+            <marker date="1540872559236" expanded="true" signature="108:1929" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="142:1927" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="420:504" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="535:1660" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="778:858" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="1097:1650" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="1212:1413" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="1434:1636" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="1699:1921" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="1751:1886" ph="{...}" />
+            <marker date="1540872559236" expanded="true" signature="1806:1872" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1540872559267" expanded="false" signature="6:80" ph="..." />
+            <marker date="1540872559267" expanded="true" signature="108:2003" ph="{...}" />
+            <marker date="1540872559267" expanded="true" signature="143:2001" ph="{...}" />
+            <marker date="1540872559267" expanded="true" signature="339:427" ph="{...}" />
+            <marker date="1540872559267" expanded="true" signature="458:1343" ph="{...}" />
+            <marker date="1540872559267" expanded="true" signature="1000:1282" ph="{...}" />
+            <marker date="1540872559267" expanded="true" signature="1387:1995" ph="{...}" />
+            <marker date="1540872559267" expanded="true" signature="1634:1821" ph="{...}" />
+            <marker date="1540872559267" expanded="true" signature="1838:1985" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <marker date="1540874496565" expanded="true" signature="35:368" ph="{...}" />
+            <marker date="1540874496565" expanded="true" signature="69:366" ph="{...}" />
+            <marker date="1540874496565" expanded="true" signature="202:360" ph="{...}" />
+            <marker date="1540874496565" expanded="true" signature="238:325" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

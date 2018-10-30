@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using MenuShell.Domain.Services;
 
-namespace MenuShell
+namespace MenuShell.Domain
 {
-    class AdminView : BaseView
+    class ReceptionistView : View
     {
         public User LoggedInUser { get; set; }
 
-        public AdminView(string title, User loggedInUser) : base(title)
+        public ReceptionistView(string title, User loggedInUser) : base(title)
         {
             LoggedInUser = loggedInUser;
         }
@@ -19,15 +18,11 @@ namespace MenuShell
             do
             {
                 Console.Clear();
-                Console.WriteLine("\n1. Manage users" +
+                Console.WriteLine("\nView for receptionist logged in, name above" +
                     "\nESC. Exit");
                 input = Console.ReadKey().Key;
                 switch (input)
                 {
-                    case ConsoleKey.D1:
-                        ManageUsersView manage = new ManageUsersView("Admin - Manage users");
-                        manage.Display();
-                        break;
                     case ConsoleKey.Escape:
                         LoginView login = new LoginView("Log in");
                         login.Display();
@@ -35,5 +30,5 @@ namespace MenuShell
                 }
             } while (input != ConsoleKey.Escape);
         }
-    }   
+    }
 }

@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using MenuShell.Domain.Services;
 
-namespace MenuShell
+namespace MenuShell.Domain
 {
-    class ManageUsersView : BaseView
+    class ManageUsersView : View
     {
         public ManageUsersView(string title) : base(title)
         {
