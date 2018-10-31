@@ -18,7 +18,13 @@ namespace MenuShell.Domain
             WriteAt("Enter the username of the person you want to add", 2, 2);
             WriteAt(">", 2, 3);
             var username = ValidInput(Console.ReadLine(), "Username", 2);
-
+            if (helper.DuplicationChecker(username))
+            {
+                ClearInside();
+                WriteJustified("Username entered already exists - press return to go to previous menu", Console.WindowHeight / 2);
+                Console.ReadLine();
+                return;
+            }
             WriteAt("Enter the first name of the person you want to add", 2, 5);
             WriteAt(">", 2, 6);
             var firstname = ValidInput(Console.ReadLine(), "First Name", 5);

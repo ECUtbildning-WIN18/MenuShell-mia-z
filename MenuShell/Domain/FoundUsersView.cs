@@ -1,54 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MenuShell.Domain.Services;
 
 namespace MenuShell.Domain
 {
     class FoundUsersView : View
     {
-        public List<User> Users { get; set; } //Initial database of users
-        public List<User> FoundUsers { get; set; }  //List of users that matched the search query
+        private List<User> FoundUsers { get; }  //List of users that matched the search query
 
-        public FoundUsersView(string title, List<User> users, List<User> foundUsers) : base(title)
+        public FoundUsersView(string title, List<User> foundUsers) : base(title)
         {
-            Users = users;
             FoundUsers = foundUsers;
         }
 
         public void Display()
         {
             if (FoundUsers.Count > 1)
-                Console.WriteLine("\nFollowing users were found:");
+                WriteJustified("Following users were found:", 2);
             else
-                Console.WriteLine("\nFollowing user was found:");
+                WriteJustified("Following user was found:", 2);
 
-            foreach (User u in FoundUsers)
+            for (int x = 0; x < FoundUsers.Count; x++)
             {
-                Console.WriteLine($"{u.Username}");
+                WriteAt($"{FoundUsers[x].Username}", 2, 3 + x);
             }
 
-            Console.WriteLine("\nType the full Username of the user to see more details" +
-                "\nEnter nothing to return");
+            WriteAt("Type the full Username of the user to see more details", 2, FoundUsers.Count + 3 + 1);
+            WriteAt("Enter nothing to return", 2, FoundUsers.Count + 3 + 2);
+            WriteAt(">", 2, FoundUsers.Count + 3 + 3);
             var searchTerm = Console.ReadLine();
 
             if (!string.IsNullOrEmpty(searchTerm))
             {
-                var selectedUser = SearchUser(searchTerm);
+                var selectedUser = SelectUser(searchTerm);
                 if (selectedUser == null)
                 {
-                    Console.WriteLine("\nYou misspelled something\nPress return to go to back");
+                    ClearInside();
+                    WriteJustified("You misspelled something - press return to go to back", Console.WindowHeight / 2);
                     Console.ReadLine();
-                    return;
                 }
                 else
                 {
-                    UserDetailsView udv = new UserDetailsView("Admin - Manage - Search User - User details", Users, selectedUser);
-                    udv.Display();
+                    UserDetailsView udv = new UserDetailsView("Admin - Manage - Search User - User details", selectedUser);
+                    udv.Run();
                 }
             }
         }
 
-        User SearchUser(string query)
+        User SelectUser(string query)
         {
             foreach(User u in FoundUsers)
             {

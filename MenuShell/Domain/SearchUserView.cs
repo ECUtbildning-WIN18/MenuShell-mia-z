@@ -6,38 +6,31 @@ namespace MenuShell.Domain
 {
     class SearchUserView : View
     {
-        public static List<User> Users; //Initial database of users
-        List<User> FoundUsers; //List of users that matched the search query
+        private DatabaseHelper helper;
 
         public SearchUserView(string title) : base(title)
         {
-            Users = Program.Users;
-            FoundUsers = new List<User>();
+            helper = new DatabaseHelper();
         }
 
         public void Run()
         {
-            Console.WriteLine("\nEnter your search term");
-            Console.Write("\n> ");
+            WriteJustified("Enter your search term (USERNAME)", 2);
+            WriteAt(">", 2, 3);
             SearchUsers(Console.ReadLine());
         }
 
         void SearchUsers(string query)
         {
-            foreach (User u in Users)
-            {
-                if (u.Username.Contains(query))
-                {
-                    FoundUsers.Add(u);
-                }
-            }
+            List<User> FoundUsers = helper.SearchUsers(query);
             if (FoundUsers == null)
             {
-                Console.WriteLine("\nUser not found - press return to go back");
+                ClearInside();
+                WriteJustified("Users matching search term were not found - press return to go back", Console.WindowHeight / 2);
                 Console.ReadLine();
             } else
             {
-                FoundUsersView fuv = new FoundUsersView("Admin - Manage - Search - Found users", Users, FoundUsers);
+                FoundUsersView fuv = new FoundUsersView("Admin - Manage - Search - Found users", FoundUsers);
                 fuv.Display();
             }
         }

@@ -6,23 +6,24 @@ namespace MenuShell.Domain
 {
     class UserDetailsView : View
     {
-        public List<User> Users { get; set; }
-        public User SelectedUser { get; set; }
+        private DatabaseHelper helper;
+        public User SelectedUser { get; }
 
-        public UserDetailsView(string title, List<User> users, User selectedUser) : base(title)
+        public UserDetailsView(string title, User selectedUser) : base(title)
         {
-            Users = users;
+            helper = new DatabaseHelper();
             SelectedUser = selectedUser;
         }
 
-        public void Display()
+        public void Run()
         {
-            Console.WriteLine($"\nUsername: {SelectedUser.Username}" +
-                $"\nPosition: {SelectedUser.Status}" +
-                $"\nFirst name: {SelectedUser.FirstName}" +
-                $"\nLast name: {SelectedUser.LastName}" +
-                $"\nSystem role: {SelectedUser.Role.ToString()}");
-            Console.WriteLine("Press D to delete this user\nPress ESC to go back");
+            WriteAt($"Username: {SelectedUser.Username}" +
+                $"\n# Position: {SelectedUser.Status}" +
+                $"\n# First name: {SelectedUser.FirstName}" +
+                $"\n# Last name: {SelectedUser.LastName}" +
+                $"\n# System role: {SelectedUser.Role.ToString()}", 2, 2);
+            WriteAt("Press D to delete this user", 2, 8);
+            WriteAt("Press ESC to go back", 2, 9);
             ConsoleKey input;
             do
             {
@@ -42,18 +43,20 @@ namespace MenuShell.Domain
 
         void DeleteUser(User userToDelete)
         {
-            Console.WriteLine("\nAre you sure you want to delete user {0}?" +
-                        "\n(Y)es - (N)o", userToDelete.Username);
+            ClearInside();
+            WriteJustified(string.Format("Are you sure you want to delete user {0}", userToDelete.Username), 2);
+            WriteJustified("(Y)es - (N)o", 4);
             ConsoleKey input = Console.ReadKey().Key;
+            ClearInside();
             if (input == ConsoleKey.Y)
             {
-                Users.Remove(userToDelete);
-                Console.WriteLine("\nUser deleted - press return to go back");
+                helper.RemoveUser(userToDelete);
+                WriteJustified("User deleted - press return to go back", Console.WindowHeight / 2);
                 Console.ReadLine();
             }
             else
             {
-                Console.WriteLine("\nUser not deleted - press return to go back");
+                WriteJustified("\nUser not deleted - press return to go back", Console.WindowHeight / 2);
                 Console.ReadLine();
             }
         }

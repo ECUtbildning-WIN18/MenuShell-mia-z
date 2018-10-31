@@ -65,6 +65,7 @@ namespace MenuShell.Domain.Services
 
         public void AddUser(User userToAdd)
         {
+            
             using (var connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
@@ -82,7 +83,53 @@ namespace MenuShell.Domain.Services
             }
         }
         
-        public User GetUser(SqlDataReader data)
+        public void RemoveUser(User userToRemove)
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                
+                var queryString = string.Format("DELETE FROM [User] WHERE Username = '{0}' ", userToRemove.Username);
+                
+                var command = new SqlCommand(queryString, connection);
+                command.ExecuteNonQuery();
+                
+                command.Dispose();
+                connection.Close();
+                connection.Dispose();
+            }
+        }
+
+        public List<User> SearchUsers(string searchTerm)
+        {
+            List<User> FoundUsers = new List<User>();
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+
+                var queryString = "SELECT * FROM [User]";
+                var command = new SqlCommand(queryString, connection);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        if (reader["Username"].ToString().Contains(searchTerm))
+                        {
+                            FoundUsers.Add(GetUser(reader));
+                        }
+                    }
+                }
+                
+                command.Dispose();
+                connection.Close();
+                connection.Dispose();
+            }
+
+            return FoundUsers;
+        }
+        
+        private User GetUser(SqlDataReader data)
         {
             User user = new User(
                 data["Username"].ToString(),
@@ -95,6 +142,33 @@ namespace MenuShell.Domain.Services
         return user;
         }
 
+        public bool DuplicationChecker(string usernameQuery)
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+
+                var queryString = "SELECT * FROM [User]";
+                var command = new SqlCommand(queryString, connection);
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        if (reader["Username"].ToString() == usernameQuery)
+                        {
+                            return true;
+                        }
+                    }
+                }
+                
+                command.Dispose();
+                connection.Close();
+                connection.Dispose();
+            }
+            return false;
+        }
+        
         private string ParseEnumToString(Roles r)
         {
             switch (r)
