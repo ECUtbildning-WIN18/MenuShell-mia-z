@@ -6,9 +6,11 @@ namespace MenuShell.Domain
 {
     class AddUserView : View
     {
+        private DatabaseHelper helper;
+        
         public AddUserView(string title) : base(title)
         {
-            //Constructor
+            helper = new DatabaseHelper();
         }
 
         public void Run()
@@ -75,6 +77,7 @@ namespace MenuShell.Domain
 
         void Confirmation(User preliminaryUser)
         {
+            ClearInside();
             WriteJustified("Are you sure you want to add the following user:", 3);                                    
             WriteJustified(preliminaryUser.FirstName, 4);                                    
             WriteJustified("with role:", 5);                                        
@@ -84,7 +87,11 @@ namespace MenuShell.Domain
             var input = Console.ReadKey().Key;
             if (input == ConsoleKey.Y)
             {
+                ClearInside();
+                helper.AddUser(preliminaryUser);
                 WriteJustified($"User {preliminaryUser.FirstName}, {preliminaryUser.Status} added!", 6);
+                WriteJustified("Press return to go back", 7);
+                Console.ReadLine();
             }
             else
             {

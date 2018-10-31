@@ -63,9 +63,23 @@ namespace MenuShell.Domain.Services
             return null;
         }
 
-        public void AddUser()
+        public void AddUser(User userToAdd)
         {
-            
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                
+                var queryString = string.Format("INSERT INTO [USER] VALUES " +
+                                  "('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", 
+                    userToAdd.Username, userToAdd.Password, userToAdd.FirstName, userToAdd.LastName, userToAdd.Status, ParseEnumToString(userToAdd.Role));
+                
+                var command = new SqlCommand(queryString, connection);
+                command.ExecuteNonQuery();
+                
+                command.Dispose();
+                connection.Close();
+                connection.Dispose();
+            }
         }
         
         public User GetUser(SqlDataReader data)
@@ -76,12 +90,28 @@ namespace MenuShell.Domain.Services
                 data["FirstName"].ToString(),
                 data["LastName"].ToString(),
                 data["Status"].ToString(),
-                ParseEnum(data["Role"].ToString())
+                ParseStringToEnum(data["Role"].ToString())
             );
         return user;
         }
+
+        private string ParseEnumToString(Roles r)
+        {
+            switch (r)
+            {
+                case Roles.Admin:
+                    return "Roles.Admin";
+                case Roles.Receptionist:
+                    return "Roles.Receptionist";
+                case Roles.Vet:
+                    return "Roles.Vet";
+                case Roles.User:
+                    return "Roles.User";
+            }
+            return null;
+        }
         
-        private Roles ParseEnum(string s)
+        private Roles ParseStringToEnum(string s)
         {
             switch (s)
             {

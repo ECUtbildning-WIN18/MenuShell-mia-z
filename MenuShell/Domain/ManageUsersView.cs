@@ -25,7 +25,7 @@ namespace MenuShell.Domain
                         break;
                     case ConsoleKey.D2:
                         SearchUserView searchUser = new SearchUserView("Find a user");
-                        searchUser.Display();
+                        searchUser.Run();
                         input = ConsoleKey.Escape;
                         break;
                     case ConsoleKey.Escape:

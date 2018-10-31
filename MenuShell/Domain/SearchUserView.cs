@@ -15,7 +15,7 @@ namespace MenuShell.Domain
             FoundUsers = new List<User>();
         }
 
-        public void Display()
+        public void Run()
         {
             Console.WriteLine("\nEnter your search term");
             Console.Write("\n> ");
