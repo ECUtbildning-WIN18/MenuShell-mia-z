@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99229fb1-8e01-4667-bab8-7d15b28b3e5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/FoundUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/FoundUsersView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/SearchUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/SearchUserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs" afterDir="false" />
-    </list>
+    <list default="true" id="99229fb1-8e01-4667-bab8-7d15b28b3e5e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,8 +243,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="266">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <marker date="1540983491568" expanded="false" signature="6:80" ph="..." />
                 <marker date="1540983491568" expanded="true" signature="108:2131" ph="{...}" />
@@ -432,12 +426,12 @@
       <workItem from="1540871224763" duration="51000" />
       <workItem from="1540871302369" duration="466000" />
       <workItem from="1540871800200" duration="6598000" />
-      <workItem from="1540963511967" duration="18615000" />
+      <workItem from="1540963511967" duration="18706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26127000" />
+    <option name="totallyTimeSpent" value="26218000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,7 +453,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" auto_hide="true" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="bottom" auto_hide="true" id="Run" order="2" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" auto_hide="true" id="Debug" order="3" type="SLIDING" visible="true" weight="0.27124184" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="3" type="SLIDING" weight="0.27124184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -767,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="266">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <marker date="1540983491568" expanded="false" signature="6:80" ph="..." />
             <marker date="1540983491568" expanded="true" signature="108:2131" ph="{...}" />
