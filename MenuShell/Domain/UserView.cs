@@ -7,7 +7,7 @@ namespace MenuShell.Domain
     {
         public User LoggedInUser { get; set; }
 
-        public UserView(string title, User loggedInUser) : base(title)
+        public UserView(string title, string[] entries, User loggedInUser) : base(title, entries)
         {
             LoggedInUser = loggedInUser;
         }
@@ -24,7 +24,7 @@ namespace MenuShell.Domain
                 {
                     case ConsoleKey.Escape:
                         LoginView login = new LoginView("Log in");
-                        login.Display();
+                        login.Run();
                         break;
                 }
             } while (input != ConsoleKey.Escape);

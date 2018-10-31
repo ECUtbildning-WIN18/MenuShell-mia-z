@@ -2,7 +2,7 @@
 
 namespace MenuShell.Domain
 {
-    class User
+    public class User
     {
         public string Username { get; }
         public string Password { get; }

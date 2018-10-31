@@ -7,7 +7,7 @@ namespace MenuShell.Domain
     {
         public User LoggedInUser { get; set; }
 
-        public AdminView(string title, User loggedInUser) : base(title)
+        public AdminView(string title, string[] entries, User loggedInUser) : base(title, entries)
         {
             LoggedInUser = loggedInUser;
         }
@@ -17,19 +17,16 @@ namespace MenuShell.Domain
             ConsoleKey input;
             do
             {
-                Console.Clear();
-                Console.WriteLine("\n1. Manage users" +
-                    "\nESC. Exit");
                 input = Console.ReadKey().Key;
                 switch (input)
                 {
                     case ConsoleKey.D1:
-                        ManageUsersView manage = new ManageUsersView("Admin - Manage users");
-                        manage.Display();
+                        ManageUsersView manage = new ManageUsersView("Admin - Manage users", new MenuPopulator().GetMenu(11));
+                        manage.Run();
                         break;
                     case ConsoleKey.Escape:
                         LoginView login = new LoginView("Log in");
-                        login.Display();
+                        login.Run();
                         break;
                 }
             } while (input != ConsoleKey.Escape);

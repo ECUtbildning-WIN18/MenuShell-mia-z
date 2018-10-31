@@ -13,7 +13,7 @@ namespace MenuShell.Domain
             Users = Program.Users;
         }
 
-        public void Display()
+        public void Run()
         {
             Console.WriteLine("\nEnter the username of the person you want to add");
             Console.Write("\n> ");

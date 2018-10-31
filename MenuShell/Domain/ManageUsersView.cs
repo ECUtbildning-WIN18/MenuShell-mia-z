@@ -5,26 +5,22 @@ namespace MenuShell.Domain
 {
     class ManageUsersView : View
     {
-        public ManageUsersView(string title) : base(title)
+        public ManageUsersView(string title, string[] entries) : base(title, entries)
         {
 
         }
 
-        public void Display()
+        public void Run()
         {
             ConsoleKey input;
             do
             {
-                Console.Clear();
-                Console.WriteLine("\n1. Add new user" +
-                    "\n2. Search for a user" +
-                    "\nESC. Exit");
-                input = Console.ReadKey().Key;
+                input = Console.ReadKey(false).Key;
                 switch (input)
                 {
                     case ConsoleKey.D1:
                         AddUserView addUser = new AddUserView("Add a new user");
-                        addUser.Display();
+                        addUser.Run();
                         break;
                     case ConsoleKey.D2:
                         SearchUserView searchUser = new SearchUserView("Find a user");
