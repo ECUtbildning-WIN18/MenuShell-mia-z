@@ -1,17 +1,16 @@
 ﻿using System.Collections.Generic;
 using MenuShell.Domain;
+using MenuShell.Domain.Services;
 
 namespace MenuShell
 {
     class Program
     {
-        public static List<User> Users;
-
         static void Main(string[] args)
         {
             //Users = new List<User>(); //POPULATE THIS WITH USERS FROM DB
-            //var helper = new DatabaseHelper();
-            //helper.PopulateDB(Users);
+            var helper = new DatabaseHelper();
+            helper.CreateInitialTable();
             var running = true;
             while (running)
             {

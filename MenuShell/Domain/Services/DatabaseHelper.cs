@@ -13,6 +13,37 @@ namespace MenuShell.Domain.Services
             ConnectionString = "Server=127.0.0.1;DataBase=DentalCare;user id=SA; pwd=Ryan2134!;";
             //ConnectionString = "Data Source=(local);Initial Catalog=DentalCare;Integrated Security=true;";
         }
+
+        public void CreateInitialTable()
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+
+                var queryCreateTable = string.Format("CREATE TABLE [User] ("+
+                    "[Username] varchar(100),"+
+                    "[Password] varchar(100),"+
+                    "[FirstName] varchar(100),"+
+                    "[LastName] varchar(100),"+
+                    "[Status] varchar(100),"+
+                    "[Role] varchar(100)"+
+                    ")");
+                
+                var commandCreateTable = new SqlCommand(queryCreateTable, connection);
+                commandCreateTable.ExecuteNonQuery();
+                commandCreateTable.Dispose();
+                
+                var queryPopulateTable = string.Format("INSERT INTO [User] VALUES ('admin', '123', 'System', 'Administrator', 'SysAdmin', 'Roles.Admin'), " +
+                                                "('johnd1', 'password', 'John', 'Doe', 'Dentist', 'Roles.Vet'), " +
+                                                "('janed1', 'password', 'Jane', 'Doe', 'Dentist', 'Roles.Vet')");
+                var commandPopulateTable = new SqlCommand(queryPopulateTable, connection);
+                commandPopulateTable.ExecuteNonQuery();
+                commandPopulateTable.Dispose();
+                
+                connection.Close();
+                connection.Dispose();
+            }
+        }
         
         //POPULATES A LIST FROM SQL DB
         public void PopulateDB(List<User> users)
