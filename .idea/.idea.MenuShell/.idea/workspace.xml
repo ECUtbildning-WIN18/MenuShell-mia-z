@@ -8,13 +8,8 @@
       <change beforePath="$PROJECT_DIR$/MenuShell/Domain/AdminView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/AdminView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/ReceptionistView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/ReceptionistView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/UserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/UserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/VetView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/VetView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuShell/MenuShell.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/MenuShell.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MenuShell/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuShell/Program.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,66 +51,68 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="38" />
+          <entry key="cs" value="43" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="38" />
+          <entry key="C#" value="43" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2685" />
+          <entry key="cs" value="4381" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2685" />
+          <entry key="C#" value="4381" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MenuShell/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="361">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
-                <marker date="1540969961171" expanded="true" signature="6:104" ph="..." />
-                <marker date="1540969961171" expanded="true" signature="125:508" ph="{...}" />
-                <marker date="1540969961171" expanded="true" signature="145:506" ph="{...}" />
-                <marker date="1540969961171" expanded="true" signature="232:500" ph="{...}" />
+                <marker date="1540974231548" expanded="true" signature="6:57" ph="..." />
+                <marker date="1540974231548" expanded="true" signature="78:547" ph="{...}" />
+                <marker date="1540974231548" expanded="true" signature="98:545" ph="{...}" />
+                <marker date="1540974231548" expanded="true" signature="185:539" ph="{...}" />
+                <marker date="1540974231548" expanded="true" signature="208:359" ph="/* Users = new List&lt;User&gt;(); //POPULATE THIS WITH USERS FROM DB ... */" />
+                <marker date="1540974231548" expanded="true" signature="419:529" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/Roles.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseHelper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="647">
+              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
               <folding>
-                <marker date="1540872566425" expanded="true" signature="35:151" ph="{...}" />
-                <marker date="1540872566425" expanded="true" signature="59:149" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/User.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-              <folding>
-                <marker date="1540966932048" expanded="true" signature="60:657" ph="{...}" />
-                <marker date="1540966932048" expanded="true" signature="84:655" ph="{...}" />
-                <marker date="1540966932048" expanded="true" signature="441:649" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="6:62" ph="..." />
+                <marker date="1540977182947" expanded="true" signature="100:3164" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="134:3162" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="229:456" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="553:1181" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="636:1171" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="947:1031" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="1246:2205" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="1329:2169" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="1599:2029" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="1729:2011" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="2236:2269" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="2326:2691" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="2742:3156" ph="{...}" />
+                <marker date="1540977182947" expanded="true" signature="2775:3115" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -124,18 +121,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MenuShell/Domain/LoginView.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="26" column="103" selection-start-line="26" selection-start-column="103" selection-end-line="26" selection-end-column="103" />
+            <state relative-caret-position="495">
+              <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
               <folding>
-                <marker date="1540966732607" expanded="false" signature="6:80" ph="..." />
-                <marker date="1540966732607" expanded="true" signature="108:2238" ph="{...}" />
-                <marker date="1540966732607" expanded="true" signature="161:2236" ph="{...}" />
-                <marker date="1540966732607" expanded="true" signature="254:287" ph="{...}" />
-                <marker date="1540966732607" expanded="true" signature="314:1848" ph="{...}" />
-                <marker date="1540966732607" expanded="true" signature="648:1838" ph="{...}" />
-                <marker date="1540966732607" expanded="true" signature="1935:2230" ph="{...}" />
-                <marker date="1540966732607" expanded="true" signature="1986:2189" ph="{...}" />
-                <marker date="1540966732607" expanded="true" signature="2067:2175" ph="{...}" />
+                <marker date="1540975920890" expanded="false" signature="6:122" ph="..." />
+                <marker date="1540975920890" expanded="true" signature="150:2411" ph="{...}" />
+                <marker date="1540975920890" expanded="true" signature="203:2409" ph="{...}" />
+                <marker date="1540975920890" expanded="true" signature="334:397" ph="{...}" />
+                <marker date="1540975920890" expanded="true" signature="424:2162" ph="{...}" />
+                <marker date="1540975920890" expanded="true" signature="892:2152" ph="{...}" />
+                <marker date="1540975920890" expanded="true" signature="2228:2403" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AdminView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding>
+                <marker date="1540975222917" expanded="false" signature="6:68" ph="..." />
+                <marker date="1540975222917" expanded="true" signature="96:1225" ph="{...}" />
+                <marker date="1540975222917" expanded="true" signature="125:1220" ph="{...}" />
+                <marker date="1540975222917" expanded="true" signature="367:486" ph="{...}" />
+                <marker date="1540975222917" expanded="true" signature="513:1214" ph="{...}" />
+                <marker date="1540975222917" expanded="true" signature="703:1154" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+              <folding>
+                <marker date="1540977029959" expanded="false" signature="6:46" ph="..." />
+                <marker date="1540977029959" expanded="true" signature="74:1077" ph="{...}" />
+                <marker date="1540977029959" expanded="true" signature="109:1075" ph="{...}" />
+                <marker date="1540977029959" expanded="true" signature="201:222" ph="{...}" />
+                <marker date="1540977029959" expanded="true" signature="249:1069" ph="{...}" />
+                <marker date="1540977029959" expanded="true" signature="401:1009" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+              <folding>
+                <marker date="1540977029944" expanded="false" signature="6:80" ph="..." />
+                <marker date="1540977029944" expanded="true" signature="108:3824" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="139:3822" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="200:246" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="273:2393" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="1411:2205" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="2463:2841" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="2520:2806" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="2890:3816" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="3453:3586" ph="{...}" />
+                <marker date="1540977029944" expanded="true" signature="3603:3793" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -162,45 +213,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AdminView.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <marker date="1540966732585" expanded="false" signature="6:46" ph="..." />
-                <marker date="1540966732585" expanded="true" signature="74:1017" ph="{...}" />
-                <marker date="1540966732585" expanded="true" signature="103:1012" ph="{...}" />
-                <marker date="1540966732585" expanded="true" signature="256:317" ph="{...}" />
-                <marker date="1540966732585" expanded="true" signature="348:1006" ph="{...}" />
-                <marker date="1540966732585" expanded="true" signature="495:946" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1084">
-              <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-              <folding>
-                <marker date="1540963873231" expanded="false" signature="6:80" ph="..." />
-                <marker date="1540963873231" expanded="true" signature="108:3474" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="139:3472" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="241:296" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="323:2399" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="1417:2211" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="2439:2796" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="2496:2761" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="2845:3466" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="3164:3288" ph="{...}" />
-                <marker date="1540963873231" expanded="true" signature="3305:3443" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -210,7 +222,7 @@
     <setting file="file://$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MenuShell/Domain/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MenuShell/Domain/FoundUsersView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/Roles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -232,20 +244,21 @@
         <option value="$PROJECT_DIR$/MenuShell/View.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/View.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/Services/MenuType.cs" />
-        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/FoundUsersView.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/ReceptionistView.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/VetView.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/UserView.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/Services/MenuPopulator.cs" />
-        <option value="$PROJECT_DIR$/MenuShell/Domain/AdminView.cs" />
-        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" />
-        <option value="$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs" />
-        <option value="$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs" />
-        <option value="$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/User.cs" />
-        <option value="$PROJECT_DIR$/MenuShell/Program.cs" />
         <option value="$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseBuilder.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Program.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/View.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/AdminView.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/LoginView.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs" />
+        <option value="$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseHelper.cs" />
       </list>
     </option>
   </component>
@@ -364,12 +377,12 @@
       <workItem from="1540871224763" duration="51000" />
       <workItem from="1540871302369" duration="466000" />
       <workItem from="1540871800200" duration="6598000" />
-      <workItem from="1540963511967" duration="5960000" />
+      <workItem from="1540963511967" duration="12346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13472000" />
+    <option name="totallyTimeSpent" value="19858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -384,7 +397,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" auto_hide="true" id="Database Console" weight="0.32897604" />
@@ -430,13 +443,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MenuShell/Domain/UserDetailsView.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -465,46 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <marker date="1540963643921" expanded="false" signature="6:46" ph="..." />
-            <marker date="1540963643921" expanded="true" signature="74:975" ph="{...}" />
-            <marker date="1540963643921" expanded="true" signature="109:973" ph="{...}" />
-            <marker date="1540963643921" expanded="true" signature="201:222" ph="{...}" />
-            <marker date="1540963643921" expanded="true" signature="249:967" ph="{...}" />
-            <marker date="1540963643921" expanded="true" signature="401:907" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/View.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <marker date="1540876464902" expanded="true" signature="50:2732" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="76:2730" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="201:406" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="504:743" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="796:1314" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="850:1055" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="1100:1304" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="1366:1541" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="1441:1531" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="1587:1703" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="1738:2040" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="1808:2030" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="1887:2016" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="2093:2301" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="2354:2449" ph="{...}" />
-            <marker date="1540876464902" expanded="true" signature="2512:2724" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,67 +514,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AdminView.cs">
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/IAuthenticationService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="114">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding>
-            <marker date="1540966732585" expanded="false" signature="6:46" ph="..." />
-            <marker date="1540966732585" expanded="true" signature="74:1017" ph="{...}" />
-            <marker date="1540966732585" expanded="true" signature="103:1012" ph="{...}" />
-            <marker date="1540966732585" expanded="true" signature="256:317" ph="{...}" />
-            <marker date="1540966732585" expanded="true" signature="348:1006" ph="{...}" />
-            <marker date="1540966732585" expanded="true" signature="495:946" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1084">
-          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-          <folding>
-            <marker date="1540963873231" expanded="false" signature="6:80" ph="..." />
-            <marker date="1540963873231" expanded="true" signature="108:3474" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="139:3472" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="241:296" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="323:2399" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="1417:2211" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="2439:2796" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="2496:2761" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="2845:3466" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="3164:3288" ph="{...}" />
-            <marker date="1540963873231" expanded="true" signature="3305:3443" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/LoginView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="26" column="103" selection-start-line="26" selection-start-column="103" selection-end-line="26" selection-end-column="103" />
-          <folding>
-            <marker date="1540966732607" expanded="false" signature="6:80" ph="..." />
-            <marker date="1540966732607" expanded="true" signature="108:2238" ph="{...}" />
-            <marker date="1540966732607" expanded="true" signature="161:2236" ph="{...}" />
-            <marker date="1540966732607" expanded="true" signature="254:287" ph="{...}" />
-            <marker date="1540966732607" expanded="true" signature="314:1848" ph="{...}" />
-            <marker date="1540966732607" expanded="true" signature="648:1838" ph="{...}" />
-            <marker date="1540966732607" expanded="true" signature="1935:2230" ph="{...}" />
-            <marker date="1540966732607" expanded="true" signature="1986:2189" ph="{...}" />
-            <marker date="1540966732607" expanded="true" signature="2067:2175" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/User.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding>
-            <marker date="1540966932048" expanded="true" signature="60:657" ph="{...}" />
-            <marker date="1540966932048" expanded="true" signature="84:655" ph="{...}" />
-            <marker date="1540966932048" expanded="true" signature="441:649" ph="{...}" />
+            <marker date="1540973426374" expanded="true" signature="70:182" ph="{...}" />
+            <marker date="1540973426374" expanded="true" signature="109:180" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -623,34 +535,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseBuilder.cs">
+    <entry file="file://$PROJECT_DIR$/MenuShell/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        <state relative-caret-position="361">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
-            <marker date="1540970262240" expanded="true" signature="6:62" ph="..." />
-            <marker date="1540970262240" expanded="true" signature="100:2129" ph="{...}" />
-            <marker date="1540970262240" expanded="true" signature="136:2127" ph="{...}" />
-            <marker date="1540970262240" expanded="true" signature="151:357" ph="/* Just realised that this completely defeats the purpose of working with Databases if Im just going to add all t ... */" />
-            <marker date="1540970262240" expanded="true" signature="406:1249" ph="{...}" />
-            <marker date="1540970262240" expanded="true" signature="704:1239" ph="{...}" />
-            <marker date="1540970262240" expanded="true" signature="1015:1099" ph="{...}" />
-            <marker date="1540970262240" expanded="true" signature="1299:1664" ph="{...}" />
-            <marker date="1540970262240" expanded="true" signature="1707:2121" ph="{...}" />
-            <marker date="1540970262240" expanded="true" signature="1740:2080" ph="{...}" />
+            <marker date="1540974231548" expanded="true" signature="6:57" ph="..." />
+            <marker date="1540974231548" expanded="true" signature="78:547" ph="{...}" />
+            <marker date="1540974231548" expanded="true" signature="98:545" ph="{...}" />
+            <marker date="1540974231548" expanded="true" signature="185:539" ph="{...}" />
+            <marker date="1540974231548" expanded="true" signature="208:359" ph="/* Users = new List&lt;User&gt;(); //POPULATE THIS WITH USERS FROM DB ... */" />
+            <marker date="1540974231548" expanded="true" signature="419:529" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MenuShell/Program.cs">
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/View.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
-            <marker date="1540969961171" expanded="true" signature="6:104" ph="..." />
-            <marker date="1540969961171" expanded="true" signature="125:508" ph="{...}" />
-            <marker date="1540969961171" expanded="true" signature="145:506" ph="{...}" />
-            <marker date="1540969961171" expanded="true" signature="232:500" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="50:2732" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="76:2730" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="201:406" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="504:743" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="796:1314" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="850:1055" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="1100:1304" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="1366:1541" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="1441:1531" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="1587:1703" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="1738:2040" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="1808:2030" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="1887:2016" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="2093:2301" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="2354:2449" ph="{...}" />
+            <marker date="1540876464902" expanded="true" signature="2512:2724" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <marker date="1540966932048" expanded="true" signature="60:657" ph="{...}" />
+            <marker date="1540966932048" expanded="true" signature="84:655" ph="{...}" />
+            <marker date="1540966932048" expanded="true" signature="441:649" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/LoginView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+          <folding>
+            <marker date="1540975920890" expanded="false" signature="6:122" ph="..." />
+            <marker date="1540975920890" expanded="true" signature="150:2411" ph="{...}" />
+            <marker date="1540975920890" expanded="true" signature="203:2409" ph="{...}" />
+            <marker date="1540975920890" expanded="true" signature="334:397" ph="{...}" />
+            <marker date="1540975920890" expanded="true" signature="424:2162" ph="{...}" />
+            <marker date="1540975920890" expanded="true" signature="892:2152" ph="{...}" />
+            <marker date="1540975920890" expanded="true" signature="2228:2403" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AdminView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <marker date="1540975222917" expanded="false" signature="6:68" ph="..." />
+            <marker date="1540975222917" expanded="true" signature="96:1225" ph="{...}" />
+            <marker date="1540975222917" expanded="true" signature="125:1220" ph="{...}" />
+            <marker date="1540975222917" expanded="true" signature="367:486" ph="{...}" />
+            <marker date="1540975222917" expanded="true" signature="513:1214" ph="{...}" />
+            <marker date="1540975222917" expanded="true" signature="703:1154" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/ManageUsersView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <marker date="1540977029959" expanded="false" signature="6:46" ph="..." />
+            <marker date="1540977029959" expanded="true" signature="74:1077" ph="{...}" />
+            <marker date="1540977029959" expanded="true" signature="109:1075" ph="{...}" />
+            <marker date="1540977029959" expanded="true" signature="201:222" ph="{...}" />
+            <marker date="1540977029959" expanded="true" signature="249:1069" ph="{...}" />
+            <marker date="1540977029959" expanded="true" signature="401:1009" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/AddUserView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+          <folding>
+            <marker date="1540977029944" expanded="false" signature="6:80" ph="..." />
+            <marker date="1540977029944" expanded="true" signature="108:3824" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="139:3822" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="200:246" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="273:2393" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="1411:2205" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="2463:2841" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="2520:2806" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="2890:3816" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="3453:3586" ph="{...}" />
+            <marker date="1540977029944" expanded="true" signature="3603:3793" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuShell/Domain/Services/DatabaseHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+          <folding>
+            <marker date="1540977182947" expanded="true" signature="6:62" ph="..." />
+            <marker date="1540977182947" expanded="true" signature="100:3164" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="134:3162" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="229:456" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="553:1181" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="636:1171" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="947:1031" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="1246:2205" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="1329:2169" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="1599:2029" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="1729:2011" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="2236:2269" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="2326:2691" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="2742:3156" ph="{...}" />
+            <marker date="1540977182947" expanded="true" signature="2775:3115" ph="{...}" />
           </folding>
         </state>
       </provider>

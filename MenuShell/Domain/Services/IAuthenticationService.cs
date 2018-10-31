@@ -4,6 +4,6 @@ namespace MenuShell.Domain.Services
 {
     interface IAuthenticationService
     {
-        Roles Authenticate(List<User> userList, string login, string password);
+        Roles Authenticate(string login, string password);
     }
 }

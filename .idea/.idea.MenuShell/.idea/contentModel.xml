@@ -15,7 +15,7 @@
           <e p="ReceptionistView.cs" t="Include" />
           <e p="SearchUserView.cs" t="Include" />
           <e p="Services" t="Include">
-            <e p="DatabaseBuilder.cs" t="Include" />
+            <e p="DatabaseHelper.cs" t="Include" />
             <e p="IAuthenticationService.cs" t="Include" />
             <e p="MenuPopulator.cs" t="Include" />
             <e p="Roles.cs" t="Include" />

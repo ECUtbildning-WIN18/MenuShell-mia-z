@@ -21,10 +21,12 @@ namespace MenuShell.Domain
                     case ConsoleKey.D1:
                         AddUserView addUser = new AddUserView("Add a new user");
                         addUser.Run();
+                        input = ConsoleKey.Escape;
                         break;
                     case ConsoleKey.D2:
                         SearchUserView searchUser = new SearchUserView("Find a user");
                         searchUser.Display();
+                        input = ConsoleKey.Escape;
                         break;
                     case ConsoleKey.Escape:
                         break;

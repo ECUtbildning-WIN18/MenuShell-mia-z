@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 using MenuShell.Domain.Services;
 
 namespace MenuShell.Domain
@@ -7,16 +8,22 @@ namespace MenuShell.Domain
     {
         public User LoggedInUser { get; set; }
 
+        private string Title { get; }
+        private string[] Entries { get; }
+        
         public AdminView(string title, string[] entries, User loggedInUser) : base(title, entries)
         {
             LoggedInUser = loggedInUser;
+            Title = title;
+            Entries = entries;
         }
 
-        public void Display()
+        public void Run()
         {
             ConsoleKey input;
             do
             {
+                CleanView(Title, Entries);
                 input = Console.ReadKey().Key;
                 switch (input)
                 {

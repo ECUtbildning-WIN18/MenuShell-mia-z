@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using MenuShell.Domain.Services;
 
 namespace MenuShell.Domain
@@ -7,25 +8,29 @@ namespace MenuShell.Domain
     class LoginView : View, IAuthenticationService
     {
         public User UserToLogIn;
+        public DatabaseHelper helper;
 
         public LoginView(string title) : base(title)
         {
-            
+            helper = new DatabaseHelper();
         }
 
         public void Run()
         {
+            WriteJustified("LEAVE FIELD BLANK TO EXIT", 1);
             WriteJustified("Please log in to continue..", 2);
             WriteAt("Username: ", 3, 4);
             var tempUsername = Console.ReadLine();
+            if (string.IsNullOrEmpty(tempUsername))
+                Environment.Exit(0);
             WriteAt("Password: ", 3, 5);
             var tempPassword = Console.ReadLine();
 
-            switch (Authenticate(Program.Users, tempUsername, tempPassword))
+            switch (Authenticate(tempUsername, tempPassword))
             {
                 case Roles.Admin:
                     var adminview = new AdminView("Administrator Menu", new MenuPopulator().GetMenu(1), UserToLogIn);
-                    adminview.Display();
+                    adminview.Run();
                     break;
                 case Roles.Receptionist:
                     var recepview = new ReceptionistView($"Welcome, Receptionist {UserToLogIn.Username}", new MenuPopulator().GetMenu(2), UserToLogIn);
@@ -40,23 +45,18 @@ namespace MenuShell.Domain
                     userview.Display();
                     break;
                 case Roles.Null:
-                    Console.WriteLine("\nIncorrect username or password\nPress return to restart..");
+                    ClearInside();
+                    WriteJustified("Incorrect username or password.", 3);
+                    WriteJustified("Press return to restart.", 4);
                     Console.ReadLine();
                     break;
             }
         }
 
-        public Roles Authenticate(List<User> userList, string login, string password)
+        public Roles Authenticate(string login, string password)
         {
-            foreach (User u in userList)
-            {
-                if (login == u.Username && password == u.Password)
-                {
-                    UserToLogIn = u;
-                    return u.Role;
-                }
-            }
-            return Roles.Null;
+            UserToLogIn = helper.LogInUser(login, password);
+            return UserToLogIn != null ? helper.LogInUser(login, password).Role : Roles.Null;
         }
     }
 }

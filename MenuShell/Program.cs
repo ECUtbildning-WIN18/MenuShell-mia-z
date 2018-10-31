@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MenuShell.Domain;
-using MenuShell.Domain.Services;
 
 namespace MenuShell
 {
@@ -11,12 +9,15 @@ namespace MenuShell
 
         static void Main(string[] args)
         {
-            Users = new List<User>(); //POPULATE THIS WITH USERS FROM DB
-            var builder = new DatabaseBuilder();
-            builder.PopulateDB(Users);
-            
-            var login = new LoginView("Log in");
-            login.Run();
+            //Users = new List<User>(); //POPULATE THIS WITH USERS FROM DB
+            //var helper = new DatabaseHelper();
+            //helper.PopulateDB(Users);
+            var running = true;
+            while (running)
+            {
+                var login = new LoginView("Log in");
+                login.Run();
+            }
         }
     }
 }
