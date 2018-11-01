@@ -5,7 +5,9 @@ namespace MenuShell.Domain.Services
     abstract class View
     {
         private string Title { get; }
-
+        
+        
+        
         protected internal View(string title) //Object that doesn't have a menu
         {
             Console.Clear();

@@ -20,6 +20,11 @@ namespace MenuShell.Domain.Services
             {
                 connection.Open();
 
+                var queryDropInitialTable = "DROP TABLE [User]";
+                var commandDropInitialTable = new SqlCommand(queryDropInitialTable, connection);
+                commandDropInitialTable.ExecuteNonQuery();
+                commandDropInitialTable.Dispose();
+                
                 var queryCreateTable = string.Format("CREATE TABLE [User] ("+
                     "[Username] varchar(100),"+
                     "[Password] varchar(100),"+
