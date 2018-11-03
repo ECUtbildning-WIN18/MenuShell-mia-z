@@ -18,7 +18,7 @@ namespace MenuShell.Domain
 
         public void Run()
         {
-            WriteJustified("LEAVE FIELD BLANK TO EXIT", 1);
+            WriteJustified("-----LEAVE FIELD BLANK TO EXIT-----", Console.WindowHeight-3);
             WriteJustified("Please log in to continue..", 2);
             WriteAt("Username: ", 3, 4);
             var tempUsername = Console.ReadLine();
