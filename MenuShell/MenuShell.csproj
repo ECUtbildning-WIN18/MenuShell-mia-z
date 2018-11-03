@@ -6,7 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.6.0-preview3-27014-02" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0-preview3-35497" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Domain\Services\DatabaseHelper.cs" />
   </ItemGroup>
 
 </Project>

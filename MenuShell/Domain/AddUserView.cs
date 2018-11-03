@@ -6,11 +6,13 @@ namespace MenuShell.Domain
 {
     class AddUserView : View
     {
-        private DatabaseHelper helper;
+        //private DatabaseHelper helper;
+        private SqlEntityHelper entityHelper;
         
         public AddUserView(string title) : base(title)
         {
-            helper = new DatabaseHelper();
+            entityHelper = new SqlEntityHelper();
+            //helper = new DatabaseHelper();
         }
 
         public void Run()
@@ -18,7 +20,7 @@ namespace MenuShell.Domain
             WriteAt("Enter the username of the person you want to add", 2, 2);
             WriteAt(">", 2, 3);
             var username = ValidInput(Console.ReadLine(), "Username", 2);
-            if (helper.DuplicationChecker(username))
+            if (entityHelper.DuplicationChecker(username))
             {
                 ClearInside();
                 WriteJustified("Username entered already exists - press return to go to previous menu", Console.WindowHeight / 2);
@@ -94,7 +96,7 @@ namespace MenuShell.Domain
             if (input == ConsoleKey.Y)
             {
                 ClearInside();
-                helper.AddUser(preliminaryUser);
+                entityHelper.AddUser(preliminaryUser);
                 WriteJustified($"User {preliminaryUser.FirstName}, {preliminaryUser.Status} added!", 6);
                 WriteJustified("Press return to go back", 7);
                 Console.ReadLine();

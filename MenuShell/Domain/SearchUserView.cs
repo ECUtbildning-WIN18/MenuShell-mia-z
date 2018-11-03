@@ -6,11 +6,13 @@ namespace MenuShell.Domain
 {
     class SearchUserView : View
     {
-        private DatabaseHelper helper;
-
+        //private DatabaseHelper helper;
+        private SqlEntityHelper entityHelper;
+        
         public SearchUserView(string title) : base(title)
         {
-            helper = new DatabaseHelper();
+            entityHelper = new SqlEntityHelper();
+            //helper = new DatabaseHelper();
         }
 
         public void Run()
@@ -22,7 +24,7 @@ namespace MenuShell.Domain
 
         void SearchUsers(string query)
         {
-            List<User> FoundUsers = helper.SearchUsers(query);
+            List<User> FoundUsers = entityHelper.ReturnUsers(query);
             if (FoundUsers == null)
             {
                 ClearInside();

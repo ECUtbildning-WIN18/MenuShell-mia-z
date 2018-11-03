@@ -6,12 +6,14 @@ namespace MenuShell.Domain
 {
     class UserDetailsView : View
     {
-        private DatabaseHelper helper;
+        //private DatabaseHelper helper;
+        private SqlEntityHelper entityHelper;
         public User SelectedUser { get; }
 
         public UserDetailsView(string title, User selectedUser) : base(title)
         {
-            helper = new DatabaseHelper();
+            entityHelper = new SqlEntityHelper();
+            //helper = new DatabaseHelper();
             SelectedUser = selectedUser;
         }
 
@@ -50,7 +52,7 @@ namespace MenuShell.Domain
             ClearInside();
             if (input == ConsoleKey.Y)
             {
-                helper.RemoveUser(userToDelete);
+                entityHelper.RemoveUser(userToDelete);
                 WriteJustified("User deleted - press return to go back", Console.WindowHeight / 2);
                 Console.ReadLine();
             }

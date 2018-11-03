@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
 using MenuShell.Domain.Services;
 
 namespace MenuShell.Domain
@@ -8,11 +7,13 @@ namespace MenuShell.Domain
     class LoginView : View, IAuthenticationService
     {
         public User UserToLogIn;
-        public DatabaseHelper helper;
+        private SqlEntityHelper entityHelper;
+        //public DatabaseHelper helper;
 
         public LoginView(string title) : base(title)
         {
-            helper = new DatabaseHelper();
+            //helper = new DatabaseHelper();
+            entityHelper = new SqlEntityHelper();
         }
 
         public void Run()
@@ -55,8 +56,8 @@ namespace MenuShell.Domain
 
         public Roles Authenticate(string login, string password)
         {
-            UserToLogIn = helper.LogInUser(login, password);
-            return UserToLogIn != null ? helper.LogInUser(login, password).Role : Roles.Null;
+            UserToLogIn = entityHelper.LogInUser(login, password);
+            return UserToLogIn != null ? entityHelper.LogInUser(login, password).Role : Roles.Null;
         }
     }
 }

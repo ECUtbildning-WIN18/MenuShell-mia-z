@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+//using System.Data.Entity;
 using System.Data.SqlClient;
 
 
@@ -10,7 +11,7 @@ namespace MenuShell.Domain.Services
         
         public DatabaseHelper()
         {
-            ConnectionString = "Server=127.0.0.1;DataBase=DentalCare;user id=SA; pwd=Ryan2134!;";
+            ConnectionString = "Server=127.0.0.1;DataBase=MenuShell;user id=SA; pwd=Ryan2134!;";
             //ConnectionString = "Data Source=(local);Initial Catalog=DentalCare;Integrated Security=true;";
         }
 
@@ -33,7 +34,7 @@ namespace MenuShell.Domain.Services
                 commandCreateTable.ExecuteNonQuery();
                 commandCreateTable.Dispose();
                 
-                var queryPopulateTable = string.Format("INSERT INTO [User] VALUES ('admin', '123', 'System', 'Administrator', 'SysAdmin', 'Roles.Admin'), " +
+                var queryPopulateTable = string.Format("INSERT INTO [User] VALUES ('admin', 'secret', 'System', 'Administrator', 'SysAdmin', 'Roles.Admin'), " +
                                                 "('johnd1', 'password', 'John', 'Doe', 'Dentist', 'Roles.Vet'), " +
                                                 "('janed1', 'password', 'Jane', 'Doe', 'Dentist', 'Roles.Vet')");
                 var commandPopulateTable = new SqlCommand(queryPopulateTable, connection);
