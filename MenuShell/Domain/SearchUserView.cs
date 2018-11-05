@@ -25,7 +25,7 @@ namespace MenuShell.Domain
         void SearchUsers(string query)
         {
             List<User> FoundUsers = entityHelper.ReturnUsers(query);
-            if (FoundUsers == null)
+            if (FoundUsers.Count < 1)
             {
                 ClearInside();
                 WriteJustified("Users matching search term were not found - press return to go back", Console.WindowHeight / 2);
