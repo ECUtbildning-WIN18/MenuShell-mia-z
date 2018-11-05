@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\miaz\.Rider2018.2\config\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\miaz\.Rider2018.2\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\miaz\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\miaz\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_MenuShell.-396941467.00" t="ExcludeRecursive" />
-    <e p="C:\Users\miaz\Workspace\MenuShell" t="IncludeFlat">
-      <e p="MenuShell" t="IncludeRecursive">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_MenuShell.-924919009.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Menushell" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Domain" t="Include">
