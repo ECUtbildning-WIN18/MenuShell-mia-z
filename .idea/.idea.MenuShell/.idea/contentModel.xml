@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_MenuShell.-924919009.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Menushell" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Domain" t="Include">
+          <e p="AddUserView.cs" t="Include" />
+          <e p="AdminView.cs" t="Include" />
+          <e p="FoundUsersView.cs" t="Include" />
+          <e p="LoginView.cs" t="Include" />
+          <e p="ManageUsersView.cs" t="Include" />
+          <e p="ReceptionistView.cs" t="Include" />
+          <e p="SearchUserView.cs" t="Include" />
+          <e p="Services" t="Include">
+            <e p="IAuthenticationService.cs" t="Include" />
+            <e p="MenuPopulator.cs" t="Include" />
+            <e p="Roles.cs" t="Include" />
+            <e p="SqlEntityHelper.cs" t="Include" />
+            <e p="View.cs" t="Include" />
+          </e>
+          <e p="User.cs" t="Include" />
+          <e p="UserDetailsView.cs" t="Include" />
+          <e p="UserView.cs" t="Include" />
+          <e p="VetView.cs" t="Include" />
+        </e>
+        <e p="MenuShell.csproj" t="IncludeRecursive" />
+        <e p="MenuShellContext.cs" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20181103165103_Initial.cs" t="Include" />
+          <e p="20181103165103_Initial.Designer.cs" t="Include" />
+          <e p="MenuShellContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="MenuShell.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="MenuShell.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
